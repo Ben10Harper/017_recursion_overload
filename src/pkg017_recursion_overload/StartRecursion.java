@@ -2,9 +2,9 @@
 package pkg017_recursion_overload;
 
 /**
- * 
+ * Shows a recursive class
  * <p>
- * 
+ * recursion is when a method calls itself from within its own code
  * <p>
  * @author Ben Harper
  * @version 1.0
@@ -13,15 +13,14 @@ package pkg017_recursion_overload;
 public class StartRecursion {
     
     /**
-     * 
+     * main code
      * <p>
-     * 
+     * used to set up variables, space out the methods, and to call the recursive classes
      * <p>
      * @author Ben Harper
      * @version 1.0
      * @since 1.0
-     * @param
-     * @return
+     * @param args default parameter in main class
      */
     public static void main(String[] args) {
                 int n = 10;
@@ -36,15 +35,14 @@ public class StartRecursion {
            
     }
     /**
-     * 
+     * first recursive class
      * <p>
-     * 
+     * this class counts down by one then calls itself again, keeps counting down until it is 0
      * <p>
      * @author Ben Harper
      * @version 1.0
      * @since 1.0
-     * @param
-     * @return
+     * @param n this is the number it counts down from
      */
     private static void recurse(int n) {
         
@@ -55,15 +53,14 @@ public class StartRecursion {
                 }
     }
     /**
-     * 
+     * second recursive class
      * <p>
-     * 
+     * this class counts up from zero by one each time it calls itself until it reaches a set number
      * <p>
      * @author Ben Harper
      * @version 1.0
      * @since 1.0
-     * @param
-     * @return
+     * @param n this is the number it counts up to
      */
     private static void recurseUp(int n) {
         
@@ -76,15 +73,15 @@ public class StartRecursion {
     //overload definition: method have the same name but different parameters
     
     /**
-     * 
+     * last recursive class
      * <p>
-     * 
+     * this class also counts up to a set number, but this time it counts by 2. It is basically the same as the last, except it only prints the even numbers, even though it still counts up by ones.
      * <p>
      * @author Ben Harper
      * @version 1.0
      * @since 1.0
-     * @param
-     * @return
+     * @param startValue this is the number it starts counting from
+     * @param stopValue this is the number it stops counting at
      */
     private static void recurseEvens(int startValue, int stopValue) {
         int t = startValue;
