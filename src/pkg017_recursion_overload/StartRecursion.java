@@ -2,11 +2,27 @@
 package pkg017_recursion_overload;
 
 /**
- *
+ * 
+ * <p>
+ * 
+ * <p>
  * @author Ben Harper
+ * @version 1.0
+ * @since 1.0
  */
 public class StartRecursion {
     
+    /**
+     * 
+     * <p>
+     * 
+     * <p>
+     * @author Ben Harper
+     * @version 1.0
+     * @since 1.0
+     * @param
+     * @return
+     */
     public static void main(String[] args) {
                 int n = 10;
                 recurse(n);
@@ -19,7 +35,17 @@ public class StartRecursion {
                 recurseEvens(startValue, stopValue);
            
     }
-
+    /**
+     * 
+     * <p>
+     * 
+     * <p>
+     * @author Ben Harper
+     * @version 1.0
+     * @since 1.0
+     * @param
+     * @return
+     */
     private static void recurse(int n) {
         
         System.out.println("recurse value is "+n+" on this recursion pass");
@@ -28,7 +54,17 @@ public class StartRecursion {
                     recurse(n);
                 }
     }
-    
+    /**
+     * 
+     * <p>
+     * 
+     * <p>
+     * @author Ben Harper
+     * @version 1.0
+     * @since 1.0
+     * @param
+     * @return
+     */
     private static void recurseUp(int n) {
         
         System.out.println("recurseUp value is "+n+" on this recursion pass");
@@ -38,6 +74,18 @@ public class StartRecursion {
                 }
     }
     //overload definition: method have the same name but different parameters
+    
+    /**
+     * 
+     * <p>
+     * 
+     * <p>
+     * @author Ben Harper
+     * @version 1.0
+     * @since 1.0
+     * @param
+     * @return
+     */
     private static void recurseEvens(int startValue, int stopValue) {
         int t = startValue;
         if (t%2 == 0){
